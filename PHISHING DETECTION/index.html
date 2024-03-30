@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          
+    <style>
+        body {
+            background-image: url('phish.jpg');
+            background-size: cover;
+        }
+
+        center {
+            margin-top: 90px;
+        }
+
+        h1 {
+            color: hotpink;
+            opacity: 0.1px;
+        }
+
+        .single-url {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .input-group-prepend .input-group-text {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        #url {
+            border-radius: 0 5px 5px 0;
+        }
+
+        .getResult {
+            background-color: #28a745;
+            border: none;
+        }
+
+        #result {
+            width: 750px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #info-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #info-section p {
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+    <title>Phishing Detection App</title>
+</head>
+<body>
+    
+    <center>
+        <h1>Phishing Url Detection</h1>
+        <div class="single-url">
+            <form id="phishingForm">
+                <div class="input-group input-group-lg" style="width: 800px; margin-top: 50px">
+                    <div class="input-group-prepend">
+                        <label for="url" class="input-group-text" id="inputGroup-sizing-lg">Enter URL:</label>
+                    </div>
+                    <input type="text" class="form-control" id="url" placeholder="https://example.com">
+                    <button type="submit" class="btn getResult btn-primary btn-lg mb-2" style="margin-left: 10px">Submit</button>
+
+                </div>
+            </form>
+            <script src="app.js"></script>
+            <script src="appp.js"></script>
+        </div>
+    </center>
+    <div id="result"></div>
+    <div id="info-section">
+        <p>This is a phishing detection app that helps you identify potentially malicious URLs. </p>
+    </div>
+</body>
+</html>
+
